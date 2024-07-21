@@ -59,7 +59,7 @@ public class YtDLP_GetInfo {
             }
             return 0;
         });
-        Format sonOnly = sonsOnly.getFirst();
+        Format sonOnly = sonsOnly.get(0);
 
         List<Format> lfres = new ArrayList<>();
         for (Entry<String, List<Format>> kv : videosSplit.entrySet()) {

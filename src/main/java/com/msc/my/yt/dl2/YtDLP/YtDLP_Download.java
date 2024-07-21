@@ -31,7 +31,7 @@ public class YtDLP_Download {
             }
             proc1.waitFor();
             is.close();
-            return new File(Config.getInstance().getYtp_dlpExe());
+            return new File(uuid);
         } catch (IOException | InterruptedException ex) {
             Logger.getLogger(YtDLP_Download.class.getName()).log(Level.SEVERE, null, ex);
         }
